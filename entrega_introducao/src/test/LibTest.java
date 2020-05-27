@@ -23,4 +23,5 @@ public class LibTest {
         when(classMock.subtracao(4, 1)).thenReturn(3);
         assertEquals(3, classMock.subtracao(4, 1));
     }
+
 }
