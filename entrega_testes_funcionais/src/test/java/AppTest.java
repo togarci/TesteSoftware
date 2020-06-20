@@ -9,111 +9,111 @@ import view.App;
 
 public class AppTest {
     @Test public void testCalc01() {
-        assertEquals(App.setCalc(0, 150), -1);
+        assertEquals(-1, App.setCalc(0, 50));
     }
 
     @Test public void testCalc02() {
-        assertEquals(App.setCalc(31, 150), -1);
+        assertEquals(-1, App.setCalc(31, 50));
     }
     
     @Test public void testCalc03() {
-        float valor_esperado = new Float(135.00);
-        assertEquals(App.setCalc(1, 150), valor_esperado);
+        float valor_esperado = new Float(45.00);
+        assertEquals(valor_esperado, App.setCalc(1, 50));
     }
     
     @Test public void testCalc04() {
-        float valor_esperado = new Float(142.50);
-        assertEquals(App.setCalc(6, 150), valor_esperado);
+        float valor_esperado = new Float(47.50);
+        assertEquals(valor_esperado, App.setCalc(6, 50));
     }
     
     @Test public void testCalc05() {
-        float valor_esperado = new Float(150.00);
-        assertEquals(App.setCalc(11, 150), valor_esperado);
+        float valor_esperado = new Float(50.00);
+        assertEquals(valor_esperado, App.setCalc(11, 50));
     }
     
     @Test public void testCalc06() {
-        float valor_esperado = new Float(153.15);
-        assertEquals(App.setCalc(16, 150), valor_esperado);
+        float valor_esperado = new Float(51.05);
+        assertEquals(valor_esperado, App.setCalc(16, 50));
     }
     
     @Test public void testCalc07() {
-        float valor_esperado = new Float(135.00);
-        assertEquals(App.setCalc(2, 150), valor_esperado);
+        float valor_esperado = new Float(45.00);
+        assertEquals(valor_esperado, App.setCalc(2, 50));
     }
     
     @Test public void testCalc08() {
-        float valor_esperado = new Float(135.00);
-        assertEquals(App.setCalc(4, 150), valor_esperado);
+        float valor_esperado = new Float(45.00);
+        assertEquals(valor_esperado, App.setCalc(4, 50));
     }
     
     @Test public void testCalc09() {
-        float valor_esperado = new Float(135.00);
-        assertEquals(App.setCalc(5, 150), valor_esperado);
+        float valor_esperado = new Float(45.00);
+        assertEquals(valor_esperado, App.setCalc(5, 50));
     }
     
     @Test public void testCalc10() {
-        float valor_esperado = new Float(142.50);
-        assertEquals(App.setCalc(7, 150), valor_esperado);
+        float valor_esperado = new Float(47.50);
+        assertEquals(valor_esperado, App.setCalc(7, 50));
     }
     
     @Test public void testCalc11() {
-        float valor_esperado = new Float(142.50);
-        assertEquals(App.setCalc(9, 150), valor_esperado);
+        float valor_esperado = new Float(47.50);
+        assertEquals(valor_esperado, App.setCalc(9, 50));
     }
     
     @Test public void testCalc12() {
-        float valor_esperado = new Float(142.50);
-        assertEquals(App.setCalc(10, 150), valor_esperado);
+        float valor_esperado = new Float(47.50);
+        assertEquals(valor_esperado, App.setCalc(10, 50));
     }
     
     @Test public void testCalc13() {
-        float valor_esperado = new Float(150.00);
-        assertEquals(App.setCalc(12, 150), valor_esperado);
+        float valor_esperado = new Float(50.00);
+        assertEquals(valor_esperado, App.setCalc(12, 50));
     }
     
     @Test public void testCalc14() {
-        float valor_esperado = new Float(150.00);
-        assertEquals(App.setCalc(14, 150), valor_esperado);
+        float valor_esperado = new Float(50.00);
+        assertEquals(valor_esperado, App.setCalc(14, 50));
     }
     
     @Test public void testCalc15() {
-        float valor_esperado = new Float(150.00);
-        assertEquals(App.setCalc(15, 150), valor_esperado);
+        float valor_esperado = new Float(50.00);
+        assertEquals(valor_esperado, App.setCalc(15, 50));
     }
     
     @Test public void testCalc16() {
-        float valor_esperado = new Float(153.30);
-        assertEquals(App.setCalc(17, 150), valor_esperado);
+        float valor_esperado = new Float(51.10);
+        assertEquals(valor_esperado, App.setCalc(17, 50));
     }
     
     @Test public void testCalc17() {
-        float valor_esperado = new Float(155.10);
-        assertEquals(App.setCalc(29, 150), valor_esperado);
+        float valor_esperado = new Float(51.70);
+        assertEquals(valor_esperado, App.setCalc(29, 50));
     }
     
     @Test public void testCalc18() {
-        float valor_esperado = new Float(155.25);
-        assertEquals(App.setCalc(30, 150), valor_esperado);
+        float valor_esperado = new Float(51.75);
+        assertEquals(valor_esperado, App.setCalc(30, 50));
     }
     
     @Test public void testCalc19() {
-        assertEquals(App.setCalc(31, 150), -1);
+        assertEquals(-1, App.setCalc(31, 50));
     }
     
     @Test public void testCalc20() {
         float valor_esperado = new Float(0.00);
-        assertEquals(App.setCalc(1, 0), valor_esperado);
+        assertEquals(valor_esperado, App.setCalc(1, 0));
     }
     
     @Test public void testCalc21() {
         float valor_esperado = new Float(-0.009000000000000001);
         float valor_inserido = new Float(-0.01);
-        assertEquals(App.setCalc(1, valor_inserido), valor_esperado);
+        assertEquals(valor_esperado, App.setCalc(1, valor_inserido));
     }
     
     @Test public void testCalc22() {
         float valor_esperado = new Float(0.009000000000000001);
         float valor_inserido = new Float(0.01);
-        assertEquals(App.setCalc(1, valor_inserido), valor_esperado);
+        assertEquals(valor_esperado, App.setCalc(1, valor_inserido));
     }
 }
